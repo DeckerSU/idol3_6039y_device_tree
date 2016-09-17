@@ -19,3 +19,4 @@ Build the android-7.0 branch in a 6.0 tree. Just add this to .repo/local_mainife
 </manifest>
 
 repo sync --force-sync -f
+repo sync --force-sync
