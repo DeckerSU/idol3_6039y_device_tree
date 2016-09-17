@@ -8,7 +8,7 @@
 /efs1           emmc      /dev/block/bootdevice/by-name/modemst1             flags=display="EFS";backup=1
 /efs2           emmc      /dev/block/bootdevice/by-name/modemst2             flags=backup=1;subpartitionof=/efs1
 
-/firmware       vfat      /dev/block/bootdevice/by-name/modem                flags=display="Firmware";mounttodecrypt
+/firmware       vfat      /dev/block/bootdevice/by-name/modem                flags=display="Firmware";backup=1;mounttodecrypt
 /persist        ext4      /dev/block/bootdevice/by-name/persist              flags=display="Persist";backup=1
 
 #/sdcard1       auto      /dev/block/mmcblk1p1                               flags=display="MicroSD";storage;wipeingui;removable
