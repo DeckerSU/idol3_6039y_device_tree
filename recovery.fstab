@@ -6,13 +6,8 @@
 /boot           emmc      /dev/block/bootdevice/by-name/boot
 /misc           emmc      /dev/block/bootdevice/by-name/misc
 
-# if using subpartions, backup of efs2 is rewrite efs1 backup (!), so using separate copy
-#/efs1           emmc      /dev/block/bootdevice/by-name/modemst1             flags=display="EFS";backup=1
-#/efs2           emmc      /dev/block/bootdevice/by-name/modemst2             flags=backup=1;subpartitionof=/efs1
-
-# correct separate partitions backup (uncomment this is you wanna using EFS backup)
-#/efs1           emmc      /dev/block/bootdevice/by-name/modemst1             flags=display="modemst1";backup=1
-#/efs2           emmc      /dev/block/bootdevice/by-name/modemst2             flags=display="modemst2";backup=1
+/efs1           emmc      /dev/block/bootdevice/by-name/modemst1             flags=display="EFS";backup=1
+/efs2           emmc      /dev/block/bootdevice/by-name/modemst2             flags=backup=1;subpartitionof=/efs1
 
 /firmware       vfat      /dev/block/bootdevice/by-name/modem                flags=display="Firmware";backup=1;mounttodecrypt
 /persist        ext4      /dev/block/bootdevice/by-name/persist              flags=display="Persist";backup=1
