@@ -89,8 +89,8 @@ TW_NO_SCREEN_TIMEOUT := true
 TW_SCREEN_BLANK_ON_BOOT := true
 
 # DEBUG (BOTH needed to enable logcat)
-TARGET_USES_LOGD := true
-TWRP_INCLUDE_LOGCAT := true
+# TARGET_USES_LOGD := true
+# TWRP_INCLUDE_LOGCAT := true
 
 # RECOVERY_VARIANT := twrp
 # RECOVERY_VARIANT := philz
